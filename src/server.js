@@ -1,5 +1,5 @@
 import express from 'express'
-import morgan from 'morgan'
+//import morgan from 'morgan'
 
 import cors from 'cors';
 import dotenv from 'dotenv';
@@ -9,14 +9,13 @@ import routerUsuario from './routers/usuario_routes.js'
 import routerCliente from './routers/cliente_routes.js'
 import routerReserva from './routers/reserva_routes.js'
 
+const app = express()
+
 // Configuración específica para desarrollo utilizando dotenv
 if (process.env.NODE_ENV !== 'production') {
     dotenv.config();
+    //app.use(morgan('dev'))
 }
-
-const app = express()
-app.use(morgan('dev'))
-
 
 // Variables
 app.set('port',process.env.PORT || 3000)
