@@ -1,0 +1,104 @@
+{
+  "vehiculos": [
+    {
+      "id": "073d",
+      "marca": "Mazda",
+      "modelo": "Mazda3",
+      "anio_fabricacion": 2021,
+      "placa": "XYZ-456",
+      "color": "Rojo",
+      "tipo_vehiculo": "Sedán",
+      "kilometraje": 30000,
+      "descripcion": "Auto deportivo y eficiente"
+    },
+    {
+      "id": "734d",
+      "marca": "Chevrolet",
+      "modelo": "Onix",
+      "anio_fabricacion": 2020,
+      "placa": "LMN-789",
+      "color": "Azul",
+      "tipo_vehiculo": "Hatchback",
+      "kilometraje": 40000,
+      "descripcion": "Económico y con buen rendimiento"
+    },
+    {
+      "marca": "Renault",
+      "modelo": "Sandero",
+      "anio_fabricacion": 2024,
+      "placa": "PBO-3412",
+      "color": "Gris",
+      "tipo_vehiculo": "Sedán",
+      "kilometraje": 15000,
+      "descripcion": "Auto cómodo y económico",
+      "id": "def15bc9-ac6b-452e-89f4-e02c875bc593"
+    },
+    {
+      "id": "focus23",
+      "marca": "Ford",
+      "modelo": "Focus",
+      "anio_fabricacion": 2023,
+      "placa": "XYZ-5678",
+      "color": "Azul",
+      "tipo_vehiculo": "Hatchback",
+      "kilometraje": 18000,
+      "descripcion": "Vehículo versátil y eficiente"
+    },
+    {
+      "id": "corolla22",
+      "marca": "Toyota",
+      "modelo": "Corolla",
+      "anio_fabricacion": 2022,
+      "placa": "ABC-1234",
+      "color": "Gris",
+      "tipo_vehiculo": "Sedán",
+      "kilometraje": 25000,
+      "descripcion": "Vehículo confiable y cómodo"
+    }
+  ],
+  "users": [
+    {
+      "id": "6774",
+      "nombre": "Admin",
+      "apellido": "Perez",
+      "username": "admin@example.com",
+      "password": "$2b$10$ABCDEFGHIJKLMNabcdefghijklmn123456"
+    },
+    {
+      "id": "1234",
+      "password": "$2b$10$J05O82eP3SGxHiDZtRaV7OYvt7FItZvXHNYbgLREss/VQicjjGOM.",
+      "nombre": "Estef",
+      "apellido": "Sanchez",
+      "username": "estef@gmail.com"
+    },
+    {
+      "id": "5678",
+      "password": "$2b$10$B1MYfZRn4lxvSOZfLapdnOKfeiqs0yZ53KH52UshWHK4yMpLK9IwS",
+      "nombre": "Jenny",
+      "apellido": "Velez",
+      "username": "jenny@gmail.com"
+    }
+  ],
+  "clientes": [
+    {
+      "id": "6454",
+      "cedula": "1723456789",
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "ciudad": "Quito",
+      "email": "juan.perez@example.com",
+      "direccion": "Av. Principal 123",
+      "telefono": "0987654321",
+      "fecha_nacimiento": "1990-05-15"
+    }
+  ],
+  "reservas": [
+    {
+      "codigo": "R001",
+      "descripcion": "Reserva de 3 días para Toyota Corolla",
+      "cliente": "6454",
+      "vehiculo": "corolla22",
+      "id": "1c78"
+    }
+  ]
+}
