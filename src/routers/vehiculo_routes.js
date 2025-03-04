@@ -17,8 +17,8 @@ const router = Router()
 router.get('/vehiculos',getAllVehiculosController)
 router.get('/vehiculos/:id',getVehiculosByIDController)
 router.post('/vehiculos',verificarAutenticacion, validarVehiculo, manejarErrores, createVehiculoController)
-router.put('/vehiculos/:id',verificarAutenticacion,updateVehiculoController)
-router.delete('/vehiculos/:id',verificarAutenticacion,deleteVehiculoController)
+router.put('/vehiculos',verificarAutenticacion,updateVehiculoController)
+router.delete('/vehiculos',verificarAutenticacion,deleteVehiculoController)
 
 
 export default router

@@ -15,8 +15,8 @@ const router = Router()
 router.get('/clientes',getAllClientesController)
 router.get('/clientes/:id',getClienteByIDController)
 router.post('/clientes',verificarAutenticacion, validarCliente, manejarErrores, createClienteController)
-router.put('/clientes/:id',verificarAutenticacion,updateClienteController)
-router.delete('/clientes/:id',verificarAutenticacion,deleteClienteController)
+router.put('/clientes',verificarAutenticacion,updateClienteController)
+router.delete('/clientes',verificarAutenticacion,deleteClienteController)
 
 
 export default router

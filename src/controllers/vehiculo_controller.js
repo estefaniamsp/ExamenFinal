@@ -47,7 +47,7 @@ const getVehiculosByIDController = async (req, res) => {
 }
 
 const updateVehiculoController = async (req, res) => {
-    const { id } = req.params;
+    const { id } = req.body;
 
     // Verificar si el ID es un ObjectId válido
     if (!mongoose.Types.ObjectId.isValid(id)) {
@@ -79,7 +79,7 @@ const updateVehiculoController = async (req, res) => {
 };
 
 const deleteVehiculoController = async (req, res) => {
-    const { id } = req.params;
+    const { id } = req.body;
 
     // Verificar si el ID es un ObjectId válido
     if (!mongoose.Types.ObjectId.isValid(id)) {

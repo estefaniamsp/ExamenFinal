@@ -1,4 +1,5 @@
 import Cliente from "../models/clientes.js";
+import mongoose from "mongoose";
 import { v4 as uuidv4 }  from 'uuid'
 
 
@@ -55,7 +56,7 @@ const createClienteController = async (req, res) => {
 
 
 const updateClienteController = async (req, res) => {
-    const { id } = req.params;
+    const { id } = req.body;
 
     // Verificar si el ID es válido
     if (!mongoose.Types.ObjectId.isValid(id)) {
@@ -98,7 +99,7 @@ const updateClienteController = async (req, res) => {
 };
 
 const deleteClienteController = async (req, res) => {
-    const { id } = req.params;
+    const { id } = req.body;
 
     // Verificar si el ID es válido
     if (!mongoose.Types.ObjectId.isValid(id)) {

@@ -15,8 +15,8 @@ const router = Router()
 router.get('/reservas',getAllReservasController)
 router.get('/reservas/:id',getReservaByIDController)
 router.post('/reservas',verificarAutenticacion, validarReserva, manejarErrores, createReservaController)
-router.put('/reservas/:id',verificarAutenticacion,updateReservaController)
-router.delete('/reservas/:id',verificarAutenticacion,deleteReservaController)
+router.put('/reservas',verificarAutenticacion,updateReservaController)
+router.delete('/reservas',verificarAutenticacion,deleteReservaController)
 
 
 export default router
